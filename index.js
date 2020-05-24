@@ -1,8 +1,8 @@
 require('dotenv').config();
+require('sqreen');
 
 const express = require('express');
 const path = require('path');
-require('sqreen');
 const Parse = require('parse/node');
 const port = process.env.PORT || 8080;
 const app = express();
