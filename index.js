@@ -1,9 +1,13 @@
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
+require('sqreen');
 const Parse = require('parse/node');
 const port = process.env.PORT || 8080;
 const app = express();
 
+console.log(process.env.PARSE_APP_ID)
 // the __dirname is the current directory from where the script is running
 Parse.serverURL = 'https://parseapi.back4app.com';
 Parse.initialize(
@@ -11,9 +15,6 @@ Parse.initialize(
     process.env.PARSE_JS_KEY, 
     process.env.PARSE_MASTER // (never use it in the frontend)
   );
-
-
-
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/ping', function (req, res) {

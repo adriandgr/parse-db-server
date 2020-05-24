@@ -13,7 +13,9 @@
   "author": "Adrian Diaz",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "parse": "^2.13.0"
+    "parse": "^2.13.0",
+    "sqreen": "^1.41.3"
   }
 }
