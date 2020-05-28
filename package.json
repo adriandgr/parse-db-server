@@ -13,8 +13,15 @@
   "author": "Adrian Diaz",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6",
     "parse": "^2.13.0",
     "sqreen": "^1.41.3"
   }
