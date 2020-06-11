@@ -5,24 +5,27 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "test": "jest"
   },
   "author": "Adrian Diaz",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
+    "express-graphql": "^0.9.0",
     "express-validator": "^6.5.0",
+    "graphql": "^15.1.0",
     "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
+    "mongoose": "^5.9.18",
     "nodemailer": "^6.4.6",
-    "parse": "^2.13.0",
     "sqreen": "^1.41.3"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
   }
 }
